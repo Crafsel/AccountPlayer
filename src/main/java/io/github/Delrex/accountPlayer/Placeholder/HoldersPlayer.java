@@ -1,4 +1,4 @@
-package io.github.Nyg404.accountPlayer.Placeholder;
+package io.github.Dalrex.accountPlayer.Placeholder;
 
 import static org.bukkit.Bukkit.getLogger;
 
@@ -7,7 +7,7 @@ import java.util.UUID;
 
 import org.bukkit.entity.Player;
 
-import io.github.Nyg404.accountPlayer.Api.AccountPlayerApi;
+import io.github.Dalrex.accountPlayer.Api.AccountPlayerApi;
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 
 public class HoldersPlayer extends PlaceholderExpansion {

@@ -1,4 +1,4 @@
-package io.github.Nyg404.accountPlayer.Commands;
+package io.github.Dalrex.accountPlayer.Commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;

@@ -1,6 +1,6 @@
-package io.github.Nyg404.accountPlayer.Events;
+package io.github.Dalrex.accountPlayer.Events;
 
-import io.github.Nyg404.accountPlayer.Api.AccountPlayerApi;
+import io.github.Dalrex.accountPlayer.Api.AccountPlayerApi;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

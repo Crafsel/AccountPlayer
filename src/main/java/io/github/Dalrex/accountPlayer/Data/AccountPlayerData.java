@@ -1,4 +1,4 @@
-package io.github.Nyg404.accountPlayer.Data;
+package io.github.Dalrex.accountPlayer.Data;
 
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;
