@@ -31,12 +31,21 @@ public class AccountPlayerApi {
         TableUtils.createTableIfNotExists(dbConnectionSource, AccountPlayerData.class);
     }
 
-    // Метод для получения экземпляра с дефолтным URL
+    /**
+     * 
+     * @return Дефолтный url базы данных (config.yml)
+     * @throws SQLException
+     */
     public static AccountPlayerApi getInstance() throws SQLException {
         return getInstance(DEFAULT_DATABASE_URL);
     }
 
-    // Метод для получения экземпляра с заданным URL (используется только при первой инициализации)
+    /**
+     * 
+     * @param dbUrl
+     * @return Устанавливаем свой url базы данных (без config.yml)
+     * @throws SQLException
+     */
     public static AccountPlayerApi getInstance(String dbUrl) throws SQLException {
         if (instance == null) {
             instance = new AccountPlayerApi(dbUrl);
@@ -52,7 +61,11 @@ public class AccountPlayerApi {
             instance = null;
         }
     }
-
+    /**
+     * 
+     * @param playerUuid
+     * @return Получаем игрока...
+     */
     public AccountPlayerData getPlayer(UUID playerUuid) {
         try {
             return playerDao.queryForId(playerUuid);
@@ -61,7 +74,15 @@ public class AccountPlayerApi {
         }
         return null;
     }
-
+    /**
+     * 
+     * @param playerUuid
+     * @param playerName
+     * @param playerLevel
+     * @param currentXp
+     * @param xpToNextLevel
+     * @return Добавляем игрока в базу данных : Устанавливая значения : Стандарт playerUuuid, playerName, 0, 0, 100
+     */
     public boolean addPlayer(UUID playerUuid, String playerName, int playerLevel, int currentXp, int xpToNextLevel) {
         try {
             AccountPlayerData existingPlayer = playerDao.queryForId(playerUuid);
@@ -77,7 +98,11 @@ public class AccountPlayerApi {
         }
         return false;
     }
-
+    /**
+     * 
+     * @param playerUuid
+     * @return Возвращает левел игрока
+     */
     public int getLevel(UUID playerUuid) {
         try {
             AccountPlayerData playerData = playerDao.queryForId(playerUuid);
@@ -89,7 +114,11 @@ public class AccountPlayerApi {
         }
         return 0;
     }
-
+    /**
+     * 
+     * @param playerUuid
+     * @return Возвращает текущие xp игрока
+     */
     public int getCurrentXp(UUID playerUuid) {
         try {
             AccountPlayerData playerData = playerDao.queryForId(playerUuid);
@@ -101,7 +130,11 @@ public class AccountPlayerApi {
         }
         return 0;
     }
-
+    /**
+     * 
+     * @param playerUuid
+     * @return Возвращает требуемое xp для повышения уровня
+     */
     public int getXpToNextLevel(UUID playerUuid) {
         try {
             AccountPlayerData playerData = playerDao.queryForId(playerUuid);
@@ -113,11 +146,15 @@ public class AccountPlayerApi {
         }
         return 0;
     }
-
+    /**
+     * Устанавливает левел для игрока.
+     * 
+     */
     public void setLevel(UUID playerUuid, int newLevel) {
         try {
             AccountPlayerData playerData = playerDao.queryForId(playerUuid);
             if (playerData != null) {
+
                 playerData.setLevel(newLevel);
                 playerDao.update(playerData);
             }
@@ -173,7 +210,14 @@ public class AccountPlayerApi {
     
 
 
-    // Устанавливает текущее значение XP и затем проверяет повышение уровня
+    /**
+     * 
+     * Устанавливаем текущие количество xp у игрока
+     * 
+     * @param playerUuid
+     * @param newCurrentXp
+     * 
+     */
     public void setCurrentXp(UUID playerUuid, int newCurrentXp) {
         try {
             AccountPlayerData playerDataObj = playerDao.queryForId(playerUuid);
@@ -187,7 +231,13 @@ public class AccountPlayerApi {
         }
     }
 
-    // Увеличивает XP на заданное значение и затем проверяет повышение уровня
+    /**
+     * 
+     * Прибавляем xp к игроку xp 
+     * 
+     * @param playerUuid
+     * @param xpIncrement
+     */
     public void updateCurrentXp(UUID playerUuid, int xpIncrement) {
         try {
             AccountPlayerData playerDataObj = playerDao.queryForId(playerUuid);
@@ -201,7 +251,13 @@ public class AccountPlayerApi {
             getLogger().warning("Ошибка при обновлении текущего XP игрока с UUID " + playerUuid + ": " + e.getMessage());
         }
     }
-
+    /**
+     * 
+     * Устанавливаем требуемое количество xp для повышения уровня
+     * 
+     * @param playerUuid
+     * @param newXpToNextLevel
+     */
     public void setXpToNextLevel(UUID playerUuid, int newXpToNextLevel) {
         try {
             AccountPlayerData playerDataObj = playerDao.queryForId(playerUuid);
