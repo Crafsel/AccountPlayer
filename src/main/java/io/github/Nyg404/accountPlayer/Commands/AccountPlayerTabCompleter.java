@@ -17,15 +17,13 @@ public class AccountPlayerTabCompleter implements TabCompleter {
 
         // Проверяем, что команду выполняет игрок
         if (sender instanceof Player) {
-            Player player = (Player) sender;
-
             if (args.length == 1) {
                 // Если первый аргумент, то автодополняем действия (getlevel, setlevel, addxp)
                 suggestions.addAll(Arrays.asList("getlevel", "setlevel", "addxp"));
             } else if (args.length == 2) {
                 // Если второй аргумент, то для действий, которые требуют параметров
                 if (args[0].equalsIgnoreCase("setlevel") || args[0].equalsIgnoreCase("addxp")) {
-                    suggestions.add("<число>");
+                    suggestions.add("/<число>");
                 }
             }
         }
