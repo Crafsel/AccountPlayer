@@ -1,0 +1,8 @@
+name: AccountPlayer
+version: '1.0'
+main: io.github.Nyg404.accountPlayer.AccountPlayer
+api-version: '1.21'
+authors: [ Nyg404 ]
+softdepen: ["PlaceholderAPI"]
+commands:
+  accountplayer:
