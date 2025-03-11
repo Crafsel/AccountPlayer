@@ -1,10 +1,10 @@
-package io.github.Nyg404.accountPlayer;
+package io.github.Dalrex.accountPlayer;
 
-import io.github.Nyg404.accountPlayer.Api.AccountPlayerApi;
-import io.github.Nyg404.accountPlayer.Commands.AccountPlayerCommand;
-import io.github.Nyg404.accountPlayer.Commands.AccountPlayerTabCompleter;
-import io.github.Nyg404.accountPlayer.Events.JoinPlayer;
-import io.github.Nyg404.accountPlayer.Placeholder.HoldersPlayer;
+import io.github.Dalrex.accountPlayer.Api.AccountPlayerApi;
+import io.github.Dalrex.accountPlayer.Commands.AccountPlayerCommand;
+import io.github.Dalrex.accountPlayer.Commands.AccountPlayerTabCompleter;
+import io.github.Dalrex.accountPlayer.Events.JoinPlayer;
+import io.github.Dalrex.accountPlayer.Placeholder.HoldersPlayer;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 

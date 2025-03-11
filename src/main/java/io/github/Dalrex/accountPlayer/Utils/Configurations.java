@@ -1,4 +1,4 @@
-package io.github.Nyg404.accountPlayer.Utils;
+package io.github.Dalrex.accountPlayer.Utils;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.Plugin;

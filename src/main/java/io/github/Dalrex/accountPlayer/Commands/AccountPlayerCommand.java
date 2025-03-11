@@ -1,6 +1,6 @@
-package io.github.Nyg404.accountPlayer.Commands;
+package io.github.Dalrex.accountPlayer.Commands;
 
-import io.github.Nyg404.accountPlayer.Api.AccountPlayerApi;
+import io.github.Dalrex.accountPlayer.Api.AccountPlayerApi;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
