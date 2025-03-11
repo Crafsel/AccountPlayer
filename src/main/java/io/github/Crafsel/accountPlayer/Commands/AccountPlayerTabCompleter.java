@@ -1,4 +1,4 @@
-package io.github.Dalrex.accountPlayer.Commands;
+package io.github.Crafsel.accountPlayer.Commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;

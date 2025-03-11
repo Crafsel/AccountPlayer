@@ -1,4 +1,4 @@
-package io.github.Dalrex.accountPlayer.Utils;
+package io.github.Crafsel.accountPlayer.Utils;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.Plugin;

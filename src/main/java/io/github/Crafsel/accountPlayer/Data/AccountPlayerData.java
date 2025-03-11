@@ -1,4 +1,4 @@
-package io.github.Dalrex.accountPlayer.Data;
+package io.github.Crafsel.accountPlayer.Data;
 
 import com.j256.ormlite.field.DatabaseField;
 import com.j256.ormlite.table.DatabaseTable;

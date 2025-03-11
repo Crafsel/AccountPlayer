@@ -1,6 +1,6 @@
 name: AccountPlayer
 version: '1.0'
-main: io.github.Dalrex.accountPlayer.AccountPlayer
+main: io.github.Crafsel.accountPlayer.AccountPlayer
 api-version: '1.21'
 authors: [ Nyg404 ]
 softdepen: ["PlaceholderAPI"]

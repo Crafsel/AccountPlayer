@@ -1,10 +1,10 @@
-package io.github.Dalrex.accountPlayer;
+package io.github.Crafsel.accountPlayer;
 
-import io.github.Dalrex.accountPlayer.Api.AccountPlayerApi;
-import io.github.Dalrex.accountPlayer.Commands.AccountPlayerCommand;
-import io.github.Dalrex.accountPlayer.Commands.AccountPlayerTabCompleter;
-import io.github.Dalrex.accountPlayer.Events.JoinPlayer;
-import io.github.Dalrex.accountPlayer.Placeholder.HoldersPlayer;
+import io.github.Crafsel.accountPlayer.Api.AccountPlayerApi;
+import io.github.Crafsel.accountPlayer.Commands.AccountPlayerCommand;
+import io.github.Crafsel.accountPlayer.Commands.AccountPlayerTabCompleter;
+import io.github.Crafsel.accountPlayer.Events.JoinPlayer;
+import io.github.Crafsel.accountPlayer.Placeholder.HoldersPlayer;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 

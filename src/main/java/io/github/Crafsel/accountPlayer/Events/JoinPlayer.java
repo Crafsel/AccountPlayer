@@ -1,6 +1,6 @@
-package io.github.Dalrex.accountPlayer.Events;
+package io.github.Crafsel.accountPlayer.Events;
 
-import io.github.Dalrex.accountPlayer.Api.AccountPlayerApi;
+import io.github.Crafsel.accountPlayer.Api.AccountPlayerApi;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

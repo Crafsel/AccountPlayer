@@ -1,11 +1,11 @@
-package io.github.Dalrex.accountPlayer.Api;
+package io.github.Crafsel.accountPlayer.Api;
 
 import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.dao.DaoManager;
 import com.j256.ormlite.jdbc.JdbcConnectionSource;
 import com.j256.ormlite.support.ConnectionSource;
 import com.j256.ormlite.table.TableUtils;
-import io.github.Dalrex.accountPlayer.Data.AccountPlayerData;
+import io.github.Crafsel.accountPlayer.Data.AccountPlayerData;
 import net.kyori.adventure.text.Component;
 import net.md_5.bungee.api.ChatColor;
 

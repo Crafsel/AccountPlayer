@@ -1,6 +1,6 @@
-package io.github.Dalrex.accountPlayer.Commands;
+package io.github.Crafsel.accountPlayer.Commands;
 
-import io.github.Dalrex.accountPlayer.Api.AccountPlayerApi;
+import io.github.Crafsel.accountPlayer.Api.AccountPlayerApi;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
