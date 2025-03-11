@@ -20,7 +20,7 @@
         <repository>
             <id>github</id>
             <name>GitHub ORG_NAME Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/Dalrex/AccountPlayer</url>
+            <url>https://maven.pkg.github.com/Crafsel/AccountPlayer</url>
         </repository>
     </distributionManagement>
 
