@@ -6,7 +6,7 @@
 
     <groupId>io.github.Crafsel</groupId>
     <artifactId>accountplayer</artifactId>
-    <version>1.0.1</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <name>accountplayer</name>
@@ -20,7 +20,7 @@
         <repository>
             <id>github</id>
             <name>GitHub ORG_NAME Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/Dalrex/AccountPlayer</url>
+            <url>https://maven.pkg.github.com/Crafsel/AccountPlayer</url>
         </repository>
     </distributionManagement>
 
