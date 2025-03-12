@@ -35,6 +35,7 @@ public final class AccountPlayer extends JavaPlugin {
 
         getCommand("accountplayer").setExecutor(new AccountPlayerCommand(accountPlayerApi));
         getCommand("accountplayer").setTabCompleter(new AccountPlayerTabCompleter());
+        
     }
 
 
